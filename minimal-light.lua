@@ -1,6 +1,6 @@
--- base16-vis (https://github.com/pshevtsov/base16-vis)
--- by Petr Shevtsov
--- Grayscale Dark scheme by Alexandre Gavioli (https://github.com/Alexx2/)
+-- vis-minimal-theme (https://github.com/erf/vis-minimal-theme)
+-- by Erlend Lind Madsen
+-- based on base16-grayscale-dark by Petr Shevtsov (https://github.com/pshevtsov/base16-vis/themes/base16-grayscale-dark)
 
 local lexers = vis.lexers
 
