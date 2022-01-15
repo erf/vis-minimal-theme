@@ -1,5 +1,5 @@
 -- vis-minimal-theme (https://github.com/erf/vis-minimal-theme)
--- by Erlend Lind Madsen
+-- minimal-dark by Erlend Lind Madsen
 
 local back0 = '#000000'
 local back1 = '#383838'
