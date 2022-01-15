@@ -1,56 +1,47 @@
 -- vis-minimal-theme (https://github.com/erf/vis-minimal-theme)
 -- by Erlend Lind Madsen
 
+local back0 = '#000000'
+local back1 = '#282828'
+local back2 = '#484848'
+local fore0 = '#ffffff'
+local fore1 = '#d8d8d8'
+local fore2 = '#b8b8b8'
+
 local lexers = vis.lexers
 
-local col = {
-	BACK = '#000000',
-	FORE = '#ffffff',
-	STAT_BACK = '#444444',
-	STAT_FORE = '#bbbbbb',
-	COMMENT = '#484848',
-	VAL = '#bbbbbb',
-	base04 = '#0000ff',
-	ERROR = '#ffffff',
-	TYPE = '#ffffff',
-	VAR = '#444444',
-	ID = '#ffffff',
-	KEY = '#eeeeee',
-	base0F = '#ffff00',
-}
+lexers.STYLE_DEFAULT ='back:'..back0..',fore:'..fore0
+lexers.STYLE_NOTHING = 'back:'..back0
+lexers.STYLE_CLASS = 'fore:'..fore0
+lexers.STYLE_COMMENT = 'fore:'..back2
+lexers.STYLE_CONSTANT = 'fore:'..fore0
+lexers.STYLE_DEFINITION = 'fore:'..fore0
+lexers.STYLE_ERROR = 'fore:'..fore0
+lexers.STYLE_FUNCTION = 'fore:'..fore0
+lexers.STYLE_KEYWORD = 'fore:'..fore2
+lexers.STYLE_LABEL = 'fore:'..fore0
+lexers.STYLE_NUMBER = 'fore:'..fore1
+lexers.STYLE_OPERATOR = 'fore:'..fore0
+lexers.STYLE_REGEX = 'fore:'..fore1
+lexers.STYLE_STRING = 'fore:'..fore1
+lexers.STYLE_PREPROCESSOR = 'fore:'..fore0
+lexers.STYLE_TAG = 'fore:'..fore0
+lexers.STYLE_TYPE = 'fore:'..fore0
+lexers.STYLE_VARIABLE = 'fore:'..fore0
+lexers.STYLE_WHITESPACE = ''
+lexers.STYLE_EMBEDDED = 'back:'..back1
+lexers.STYLE_IDENTIFIER = 'fore:'..fore0
 
-lexers.col = col
-
-local fg = ',fore:'..col.FORE..','
-local bg = ',back:'..col.BACK..','
-
-lexers.STYLE_DEFAULT = bg..fg
-lexers.STYLE_NOTHING = bg
-lexers.STYLE_CLASS = 'fore:'..col.TYPE
-lexers.STYLE_COMMENT = 'fore:'..col.COMMENT..',italics'
-lexers.STYLE_CONSTANT = 'fore:'..col.VAL
-lexers.STYLE_DEFINITION = 'fore:'..col.KEY
-lexers.STYLE_ERROR = 'fore:'..col.ERROR..',italics'
-lexers.STYLE_FUNCTION = 'fore:'..col.VAR
-lexers.STYLE_KEYWORD = 'fore:'..col.KEY
-lexers.STYLE_LABEL = 'fore:'..col.TYPE
-lexers.STYLE_NUMBER = 'fore:'..col.VAL
-lexers.STYLE_OPERATOR = 'fore:'..col.FORE
-lexers.STYLE_REGEX = 'fore:'..col.VAL
-lexers.STYLE_STRING = 'fore:'..col.VAL
-lexers.STYLE_PREPROCESSOR = 'fore:'..col.TYPE
-lexers.STYLE_TAG = 'fore:'..col.TYPE
-lexers.STYLE_TYPE = 'fore:'..col.TYPE
-lexers.STYLE_VARIABLE = 'fore:'..col.VAR
-lexers.STYLE_EMBEDDED = 'fore:'..col.base0F
-lexers.STYLE_IDENTIFIER = 'fore:'..col.ID
-
-lexers.STYLE_CURSOR = 'fore:'..col.BACK..',back:'..col.FORE
-lexers.STYLE_CURSOR_PRIMARY = 'fore:'..col.BACK..',back:'..col.FORE
-lexers.STYLE_CURSOR_LINE = 'back:'..col.STAT_BACK
-lexers.STYLE_COLOR_COLUMN = 'back:'..col.STAT_BACK
-lexers.STYLE_STATUS = 'fore:'..col.base04..',back:'..col.STAT_BACK
-lexers.STYLE_STATUS_FOCUSED = 'fore:'..col.STAT_FORE..',back:'..col.STAT_BACK
+lexers.STYLE_LINENUMBER = 'fore:'..fore1
+lexers.STYLE_LINENUMBER_CURSOR = lexers.STYLE_LINENUMBER
+lexers.STYLE_CURSOR = 'reverse'
+lexers.STYLE_CURSOR_PRIMARY = lexers.STYLE_CURSOR..',fore:'..fore1
+lexers.STYLE_CURSOR_LINE = 'underlined'
+lexers.STYLE_COLOR_COLUMN = 'back:'..back1
+lexers.STYLE_SELECTION = 'back:'..fore1
+lexers.STYLE_STATUS = 'reverse'
+lexers.STYLE_STATUS_FOCUSED = 'reverse'
 lexers.STYLE_SEPARATOR = lexers.STYLE_DEFAULT
-lexers.STYLE_INFO = 'fore:default, back:default,bold'
+lexers.STYLE_INFO = 'fore:default,back:default'
 lexers.STYLE_EOF = ''
+
