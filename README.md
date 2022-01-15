@@ -1,11 +1,11 @@
 # vis-minimal-theme
 
-A minimal B&W theme for the vis editor in both dark and light versions:
+A minimal B&W theme for the [vis](https://github.com/martanne/vis) editor in both dark and light versions:
 
 - minimal-dark
 - minimal-light
 
-We only use 3 shades of dark and 3 shades of light.
+We only use 3 shades of black and 3 shades of white.
 
 ## Install
 
