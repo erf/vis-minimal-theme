@@ -2,11 +2,11 @@
 -- by Erlend Lind Madsen
 
 local back0 = '#000000'
-local back1 = '#282828'
-local back2 = '#484848'
+local back1 = '#383838'
+local back2 = '#686868'
 local fore0 = '#ffffff'
-local fore1 = '#d8d8d8'
-local fore2 = '#b8b8b8'
+local fore1 = '#c8c8c8'
+local fore2 = '#989898'
 
 local lexers = vis.lexers
 
