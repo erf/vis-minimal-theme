@@ -34,11 +34,11 @@ lexers.STYLE_IDENTIFIER = 'fore:'..fore0
 
 lexers.STYLE_LINENUMBER = 'fore:'..fore1
 lexers.STYLE_LINENUMBER_CURSOR = lexers.STYLE_LINENUMBER
-lexers.STYLE_CURSOR = 'reverse'
+lexers.STYLE_CURSOR = 'back:'..fore2
 lexers.STYLE_CURSOR_PRIMARY = lexers.STYLE_CURSOR..',fore:'..fore1
 lexers.STYLE_CURSOR_LINE = 'underlined'
 lexers.STYLE_COLOR_COLUMN = 'back:'..back1
-lexers.STYLE_SELECTION = 'back:'..fore1
+lexers.STYLE_SELECTION = 'back:'..back2
 lexers.STYLE_STATUS = 'reverse'
 lexers.STYLE_STATUS_FOCUSED = 'reverse'
 lexers.STYLE_SEPARATOR = lexers.STYLE_DEFAULT
