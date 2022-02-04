@@ -22,16 +22,9 @@ Example `visrc.lua`:
 local plug = require('plugins/vis-plug')
 
 local conf = {
-	{ url = 'erf/vis-minimal-theme', theme = true },
+	{ url = 'erf/vis-minimal-theme', theme = true, file = 'dark' },
 }
 
 plug.init(conf, true)
-
-vis.events.subscribe(vis.events.INIT, function()
-
-	--vis:command('set theme vis-minimal-theme/light')
-	vis:command('set theme vis-minimal-theme/dark')
-
-end)
 
 ```
