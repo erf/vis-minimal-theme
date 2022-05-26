@@ -5,14 +5,15 @@ local black0 = '#000000'
 local black1 = '#383838'
 local black2 = '#686868'
 
-local trans = '#00000000'
 local white0 = '#ffffff'
 local white1 = '#c8c8c8'
 local white2 = '#989898'
 
+local clear0 = '#00000000'
+
 local lexers = vis.lexers
 
-lexers.STYLE_DEFAULT ='back:'..trans..',fore:'..black0
+lexers.STYLE_DEFAULT ='back:'..clear0..',fore:'..black0
 lexers.STYLE_NOTHING = 'back:'..white0
 lexers.STYLE_CLASS = 'fore:'..black0
 lexers.STYLE_COMMENT = 'fore:'..white2
