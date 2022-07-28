@@ -7,7 +7,8 @@ We only use 3 shades of black and white.
 The **dark-clear** and **light-clear** themes has a transparent background, for
 using the terminal background and a either black or white foreground.
 
-The **clear** theme uses a transparent background and the terminal foreground.
+The **clear** theme uses a transparent background and the terminal foreground
+with no syntax highlighting.
 
 ## Install
 
