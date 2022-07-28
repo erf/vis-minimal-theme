@@ -1,10 +1,13 @@
 # vis-minimal-theme
 
-Minimal **dark** and **light** theme for [vis](https://github.com/martanne/vis)
+Minimal **dark**, **light** and **clear** themes for [vis](https://github.com/martanne/vis)
 
-We only use 3 shades of black and white per theme.
+We only use 3 shades of black and white.
 
-There are also **dark-clear** and **light-clear**, if you'd like to use the terminal background.
+The **dark-clear** and **light-clear** themes has a transparent background, for
+using the terminal background and a either black or white foreground.
+
+The **clear** theme uses a transparent background and the terminal foreground.
 
 ## Install
 

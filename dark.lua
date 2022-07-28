@@ -1,5 +1,6 @@
 -- vis-minimal-theme (https://github.com/erf/vis-minimal-theme)
 -- dark by Erlend Lind Madsen
+-- uses a black background and a white foreground
 
 local black0 = '#000000'
 local black1 = '#383838'
