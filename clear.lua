@@ -1,37 +1,30 @@
 -- vis-minimal-theme (https://github.com/erf/vis-minimal-theme)
 -- clear by Erlend Lind Madsen
 -- uses a transparent background and the terminal foreground
--- no syntax highlighting
+-- syntax highlighting using font styles by https://github.com/qiu-x
 
-local black0 = '#000000'
-local black1 = '#383838'
-local black2 = '#686868'
-
-local white0 = '#ffffff'
-local white1 = '#c8c8c8'
 local white2 = '#989898'
-
 local clear0 = '#00000000'
 
 local lexers = vis.lexers
 
 lexers.STYLE_DEFAULT ='back:'..clear0
 lexers.STYLE_NOTHING = ''
-lexers.STYLE_CLASS = 'fore:'
-lexers.STYLE_COMMENT = 'fore:'
+lexers.STYLE_CLASS = 'fore:,bold'
+lexers.STYLE_COMMENT = 'fore:,italics'
 lexers.STYLE_CONSTANT = 'fore:'
 lexers.STYLE_DEFINITION = 'fore:'
-lexers.STYLE_ERROR = 'fore:'
-lexers.STYLE_FUNCTION = 'fore:'
-lexers.STYLE_KEYWORD = 'fore:'
-lexers.STYLE_LABEL = 'fore:'
+lexers.STYLE_ERROR = 'fore:,bold'
+lexers.STYLE_FUNCTION = 'fore:,bold'
+lexers.STYLE_KEYWORD = 'fore:,bold'
+lexers.STYLE_LABEL = 'fore:,underline'
 lexers.STYLE_NUMBER = 'fore:'
 lexers.STYLE_OPERATOR = 'fore:'
-lexers.STYLE_REGEX = 'fore:'
-lexers.STYLE_STRING = 'fore:'
-lexers.STYLE_PREPROCESSOR = 'fore:'
-lexers.STYLE_TAG = 'fore:'
-lexers.STYLE_TYPE = 'fore:'
+lexers.STYLE_REGEX = 'fore:,italics'
+lexers.STYLE_STRING = 'fore:,italics'
+lexers.STYLE_PREPROCESSOR = 'fore:,bold'
+lexers.STYLE_TAG = 'fore:,underline'
+lexers.STYLE_TYPE = 'fore:,bold'
 lexers.STYLE_VARIABLE = 'fore:'
 lexers.STYLE_WHITESPACE = ''
 lexers.STYLE_EMBEDDED = 'back:'..clear0
