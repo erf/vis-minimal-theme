@@ -2,6 +2,8 @@
 
 Minimal **dark**, **light** and **clear** themes for [vis](https://github.com/martanne/vis)
 
+<img width="300" alt="Screenshot 2022-11-29 at 01 27 30" src="https://user-images.githubusercontent.com/1562523/204408762-f9be19a1-9024-43aa-9429-d9472dee4ec2.png"><img width="300" alt="Screenshot 2022-11-29 at 01 27 50" src="https://user-images.githubusercontent.com/1562523/204408770-20a82cd6-0540-48b5-9f17-bf3c0b24fb3f.png">
+
 We only use 3 shades of black and white.
 
 The **dark-clear** and **light-clear** themes has a transparent background, for
